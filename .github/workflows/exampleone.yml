@@ -1,6 +1,6 @@
 # my_example_test
 
-name: My Example Test
+name: My Example Test One
 
 # start docker file ubuntu latest
 on:
