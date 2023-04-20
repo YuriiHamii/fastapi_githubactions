@@ -1,0 +1,27 @@
+
+# my_example_test
+
+name: My Example Test
+
+# start docker file ubuntu latest
+on:
+  push:
+    branches:
+      - master
+      
+jobs:
+  my_test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print Test Message
+      run : echo "Test Message from job my_example_test.yaml"
+  
+  my_prod:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Print Test Message
+      run : echo "Prod Message from job my_example_test.yaml"
+      
+  
