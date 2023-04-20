@@ -10,14 +10,14 @@ on:
       - master
       
 jobs:
-  my_test:
+  my_testing:
     runs-on: ubuntu-latest
     
     steps:
     - name: Print Test Message
       run : echo "Test Message from job my_example_test.yaml"
   
-  my_prod:
+  my_deploy:
     runs-on: ubuntu-latest
     
     steps:
