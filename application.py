@@ -55,6 +55,6 @@ async def update_product(product_id: str, product: Product):
 # uvicorn application:app --reload
 
 if __name__ == "__main__":
-    config = uvicorn.Config("application:app", host="http://fastapi-ebs-githubactions-env.eba-nsg3p8d8.eu-central-1.elasticbeanstalk.com/", port=443, port=80, log_level="info")
+    config = uvicorn.Config("application:app", host="fastapiproducts.eu-central-1.elasticbeanstalk.com", port=80, log_level="info")
     server = uvicorn.Server(config)
     server.run()
