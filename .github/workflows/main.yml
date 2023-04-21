@@ -4,7 +4,7 @@ name: CI-CD-pipeline-to-AWS-ElasticBeanstalk
 env :
   EB_PACKAGE_S3_BUCKET_NAME : "fastapi-githubactions"
   EB_APPLICATION_NAME       : "fastapi-ebs-githubactions"
-  EB_ENVIRONMENT_NAME       : "Fastapi-ebs-githubactions-env"
+  EB_ENVIRONMENT_NAME       : "fastapi-ebs-githubactions-env"
   DEPLOY_PACKAGE_NAME       : "fast_app_${{ github.sha }}.zip"
   AWS_REGION_NAME           : "eu-central-1"
    
