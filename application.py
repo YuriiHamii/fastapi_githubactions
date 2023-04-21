@@ -37,10 +37,10 @@ async def update_product(product_id: str, product: Product):
 async def get_products():
     return products
 
-# @app.post("/products", status_code=201)
-# async def add_products(product: Product):
-    # products.append(product)
-    # return product
+@app.post("/products", status_code=201)
+async def add_products(product: Product):
+    products.append(product)
+    return product
 
 @app.patch("/products/{product_id}", response_model=Product)
 async def update_product(product_id: str, product: Product):
@@ -52,9 +52,9 @@ async def update_product(product_id: str, product: Product):
     return updated_product
 
     
-# uvicorn app:app --reload
+# uvicorn application:app --reload
 
-if __name__ == "__main__":
-    config = uvicorn.Config("app:app", port=5000, log_level="info")
-    server = uvicorn.Server(config)
-    server.run()
+# if __name__ == "__main__":
+#     config = uvicorn.Config("app:app", port=5000, log_level="info")
+#     server = uvicorn.Server(config)
+#     server.run()
